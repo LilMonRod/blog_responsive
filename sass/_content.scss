@@ -1,10 +1,11 @@
 .about {
     position: relative;
 }
-.about__author--img {
+
+.about__author-img {
+    left: 60%;
     position: absolute;
     top: 0%;
-    left: 60%;
 }
 
 .about__mail {

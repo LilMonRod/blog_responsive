@@ -1,17 +1,21 @@
-const btnMenu = document.getElementById('btnMenu');
-const btnClose = document.getElementById('btnClose');
-const contMenu = document.getElementById('contMenu');
+(function() {
 
-function closeMenu() {
-    console.log('touched and closed');
-    contMenu.style.left = '-1000px';
-}
+    const btnMenu = document.getElementById('btnMenu');
+    const btnClose = document.getElementById('btnClose');
+    const contMenu = document.getElementById('contMenu');
 
-function openMenu() {
-    console.log('touched and opened');
-    contMenu.style.left = '0';
-}
+    function closeMenu() {
+        console.log('touched and closed');
+        contMenu.style.left = '-1000px';
+    }
 
-btnClose.addEventListener('touchend', closeMenu);
+    function openMenu() {
+        console.log('touched and opened');
+        contMenu.style.left = '0';
+    }
 
-btnMenu.addEventListener('touchend', openMenu);
+    btnClose.addEventListener('touchend', closeMenu);
+
+    btnMenu.addEventListener('touchend', openMenu);
+    
+}) ();
