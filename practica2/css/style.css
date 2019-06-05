@@ -1,0 +1,166 @@
+/****************
+      Helpers
+*****************/
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+/****************
+      Imports
+*****************/
+.add {
+  height: 50vw;
+  overflow: hidden;
+  width: 100%; }
+
+.img__add {
+  width: 100%; }
+
+.about {
+  position: relative; }
+
+.about__author-img {
+  left: 60%;
+  position: absolute;
+  top: 0%; }
+
+.about__mail {
+  color: #CE5937;
+  cursor: pointer; }
+
+.about__media {
+  margin: 3% 4%;
+  width: 6%; }
+
+.footer__cont-menu {
+  margin-top: 15%;
+  padding-left: 3%; }
+
+.footer__menu {
+  list-style: none;
+  display: inline;
+  padding: 4% 0; }
+
+.footer__menu:last-child {
+  padding-left: 10%; }
+
+.footer__menu-items {
+  text-decoration: none;
+  color: black;
+  cursor: pointer; }
+
+body {
+  margin: 0;
+  font-size: 18px; }
+
+h4 {
+  margin-bottom: 0; }
+
+h5 {
+  margin-bottom: 0; }
+
+a,
+h3,
+h4,
+h5,
+li,
+p,
+q {
+  padding: 0 4%; }
+
+.bgImg {
+  background-image: url("https://expo.advance.net/img/d8aa23fcc3/width960/2fc_tulip.gif");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.header {
+  max-width: 90%;
+  margin: 5% 5% 10% 5%;
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 5%;
+  grid-row-gap: 15%;
+  grid-auto-rows: 40px; }
+
+.header__icon--logo,
+.header__icon--menu {
+  width: 100%; }
+
+.hero {
+  height: 50vw;
+  margin-bottom: 15%;
+  width: 100%; }
+
+.hero__author {
+  color: #fff;
+  padding-left: 15%;
+  text-shadow: 2px 2px 2px #CE5937; }
+
+.hero__author-img {
+  border-radius: 50%;
+  float: right; }
+
+.hero__title {
+  color: #fff;
+  padding-top: 15%;
+  text-align: center;
+  text-shadow: 2px 2px 2px #CE5937; }
+
+.header__icon--menu {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+.menu__list {
+  display: none;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center; }
+
+.menu__list + .menu__list {
+  grid-row-start: 3;
+  grid-row-end: 4; }
+
+.menu__list:last-child {
+  grid-row-start: 4;
+  grid-row-end: 5; }
+
+.btn__leer-post {
+  border-radius: 15%;
+  box-shadow: 3px 2px 4px 1px rgba(206, 89, 55, 0.93);
+  color: black;
+  cursor: pointer;
+  padding: 2%;
+  text-decoration: none; }
+
+.btn__leer-post:hover {
+  background-color: antiquewhite; }
+
+.post__img {
+  border-radius: 50%;
+  float: right; }
+
+.post__title {
+  padding: 5% 4%; }
+
+.related__cont {
+  padding: 0;
+  position: relative; }
+
+.related__post {
+  box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.75);
+  height: 80vw;
+  list-style: none;
+  margin: 6% 0 8%;
+  width: 90%; }
+
+.related__tittle {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+.bgImg {
+    background-image: url('https://expo.advance.net/img/d8aa23fcc3/width960/2fc_tulip.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    max-width: 90%;
+    margin: 5% 5% 10% 5%;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 5%;
+    grid-row-gap: 15%;
+    grid-auto-rows: 40px;
+}
+
+.header__icon--logo,
+.header__icon--menu {
+    width: 100%;
+}
+
+.hero {
+    height: 50vw;
+    margin-bottom: 15%;
+    width: 100%;
+}
+
+.hero__author {
+    color: #fff;
+    padding-left: 15%;
+    text-shadow: 2px 2px 2px #CE5937;
+}
+
+.hero__author-img {
+    border-radius: 50%;
+    float: right;
+}
+
+.hero__title {
+    color: #fff;
+    padding-top: 15%;
+    text-align: center;
+    text-shadow: 2px 2px 2px #CE5937;
+}
