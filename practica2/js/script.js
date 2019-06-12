@@ -16,14 +16,14 @@
     }
     function closeMenu() {
         contMenu.forEach(element => {
-            element.style.display = 'none';
+            element.classList.add('none');
         });
         container.style.height = 'auto';
     }
 
     function openMenu() {
         contMenu.forEach(element => {
-            element.style.display = 'block';
+            element.classList.remove('none');
         });
         container.style.height = '-webkit-fill-available';
     }

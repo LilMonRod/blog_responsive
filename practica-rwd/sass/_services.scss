@@ -1,0 +1,35 @@
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.services {
+    padding: 20px;
+}
+
+.services__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+
+}
+
+.services__title {
+    grid-column: 1 / span 2;
+}
+
+.services h3 {
+    margin: 0;
+    padding: 10px;
+    font-size: 1rem;
+    max-width: 400px;
+    display: inline;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    @media only screen and (min-width: 600px) {
+        font-size: 1.5rem;
+        font-size: 1.5rem;
+    }
+}

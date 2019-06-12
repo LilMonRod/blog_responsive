@@ -19,6 +19,14 @@
 .header__icon--logo,
 .header__icon--menu {
     width: 100%;
+
+    @media only screen and (min-width: 400px) {
+        width: 60%;
+    }
+
+    @media only screen and (min-width: 600px) {
+        width: 60%;
+    }
 }
 
 .hero {

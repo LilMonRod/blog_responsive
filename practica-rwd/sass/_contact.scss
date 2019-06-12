@@ -1,0 +1,37 @@
+
+.contact__inner {
+    padding: 20px;
+}
+  
+.contact__item {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+label::after {
+    content: ":";
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+}
+  
+input[type="submit"] {
+    padding: 5px 15px;
+    font-size: 1rem;
+    background-color: #ccc;
+    font-weight: 700;
+}
+
+input {
+    -webkit-box-shadow: 0.5px 0.5px 1px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0.5px 0.5px 1px 0px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+}

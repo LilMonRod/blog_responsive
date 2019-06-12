@@ -7,6 +7,10 @@
     clear: both;
 }
 
+.none {
+      display: none;
+}
+
 /****************
       Imports
 *****************/
@@ -20,6 +24,6 @@
 
 @import 'header.scss';
 
-@import 'menu.scss';
+@import 'main-posts.scss';
 
-@import 'related.scss';
+@import 'menu.scss';
