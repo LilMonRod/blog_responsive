@@ -12,14 +12,13 @@
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 5%;
-    grid-row-gap: 15%;
+    grid-row-gap: 5%;
     grid-auto-rows: 40px;
 }
 
 .header__icon--logo,
-.header__icon--menu {
+.header__icon--img {
     width: 100%;
-
     @media only screen and (min-width: 400px) {
         width: 60%;
     }

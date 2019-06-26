@@ -6,9 +6,6 @@
   content: "";
   clear: both; }
 
-.none {
-  display: none; }
-
 /****************
       Imports
 *****************/
@@ -85,19 +82,19 @@ q {
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 5%;
-  grid-row-gap: 15%;
+  grid-row-gap: 5%;
   grid-auto-rows: 40px; }
 
 .header__icon--logo,
-.header__icon--menu {
+.header__icon--img {
   width: 100%; }
   @media only screen and (min-width: 400px) {
     .header__icon--logo,
-    .header__icon--menu {
+    .header__icon--img {
       width: 60%; } }
   @media only screen and (min-width: 600px) {
     .header__icon--logo,
-    .header__icon--menu {
+    .header__icon--img {
       width: 60%; } }
 
 .hero {
@@ -210,41 +207,48 @@ q {
   grid-column-end: 8;
   grid-row-start: 1;
   grid-row-end: 2; }
-  @media only screen and (min-width: 600px) {
-    .header__icon--menu {
-      display: none; } }
 
-.menu__list {
+.contMenu {
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15%;
+  padding: 0;
   grid-column-start: 1;
   grid-column-end: 8;
   grid-row-start: 2;
-  grid-row-end: 3;
-  justify-self: center; }
+  grid-row-end: 6; }
+
+.none {
+  display: none;
+  overflow: hidden;
+  transition: height 1000ms linear; }
+
+.menu__list {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: center;
+  list-style: none; }
   @media only screen and (min-width: 600px) {
     .menu__list {
       display: block;
-      grid-column-start: 4;
-      grid-column-end: 5;
-      grid-row-start: 1;
-      grid-row-end: 2;
       justify-self: end;
       align-self: end; } }
 
 .menu__list + .menu__list {
-  grid-row-start: 3;
-  grid-row-end: 4; }
+  grid-row-start: 2;
+  grid-row-end: 3; }
   @media only screen and (min-width: 600px) {
     .menu__list + .menu__list {
       display: block;
-      grid-column-start: 5;
-      grid-column-end: 6;
-      grid-row-start: 1;
-      grid-row-end: 2;
       align-self: end; } }
 
 .menu__list:last-child {
-  grid-row-start: 4;
-  grid-row-end: 5; }
+  grid-row-start: 3;
+  grid-row-end: 4; }
   @media only screen and (min-width: 600px) {
     .menu__list:last-child {
       display: block;
@@ -253,5 +257,12 @@ q {
       grid-row-start: 1;
       grid-row-end: 2;
       align-self: end; } }
+
+.menu__list-items {
+  text-decoration: none;
+  color: black; }
+  .menu__list-items:hover {
+    text-decoration: underline;
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

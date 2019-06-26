@@ -1,11 +1,12 @@
 (function() {
     const btnMenu = document.getElementById('btnMenu');
     const container = document.getElementById('contHeader');
-    let contMenu = document.querySelectorAll('a.contMenu-js');
-    contMenu = Array.from(contMenu);
+    let contMenu = document.getElementById('contMenu-js');
     let value = true;
+    contMenu.classList.add('none');
     
     function changeSrc() {
+        console.log(value);
         btnMenu.removeAttribute('src');
         if (value) {
             btnMenu.setAttribute('src', 'img/icons/close-menu.svg');
@@ -13,19 +14,14 @@
             btnMenu.setAttribute('src', 'img/icons/menu.svg');
         }
         value = !value;
+        console.log(value);
     }
     function closeMenu() {
-        contMenu.forEach(element => {
-            element.classList.add('none');
-        });
-        container.style.height = 'auto';
+        contMenu.classList.add('none');
     }
 
     function openMenu() {
-        contMenu.forEach(element => {
-            element.classList.remove('none');
-        });
-        container.style.height = '-webkit-fill-available';
+        contMenu.classList.remove('none');
     }
 
     function menu() {
@@ -37,5 +33,6 @@
         changeSrc();
     }
     btnMenu.addEventListener('touchend', menu);
-    
+    btnMenu.addEventListener('click', menu);
+
 }) ();

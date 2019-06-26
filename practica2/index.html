@@ -12,16 +12,21 @@
 	<nav id="contHeader" class="header">
 		<img class="header__icon--logo" src="img/icons/icon-tulip.svg" alt="home tulips">
 
-		<img id="btnMenu" class="header__icon--menu" src="img/icons/menu.svg" alt="menu">
+		<button id="btnMenu" class="header__icon--menu">
+			<img class="header__icon--img" src="img/icons/menu.svg" alt="menu">
+		</button>
 			
-		<a class="menu__list menu__list-items contMenu-js none" href="#">Home</a>
-			
-			
-		<a class="menu__list menu__list-items contMenu-js none" href="#">Posts</a>
-			
-			
-		<a class="menu__list menu__list-items contMenu-js none" href="#">About</a>
-			
+		<ul id="contMenu-js" class="contMenu">
+			<li class="menu__list">
+				<a class="menu__list-items" href="#">Home</a>
+			</li>
+			<li class="menu__list">
+				<a class="menu__list-items" href="#">Posts</a>
+			</li>
+			<li class="menu__list">
+				<a class="menu__list-items" href="#">About</a>
+			</li>
+		</ul>	
 	</nav>
 
 	<section class="main">
