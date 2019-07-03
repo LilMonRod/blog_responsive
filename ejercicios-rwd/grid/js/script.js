@@ -13,15 +13,18 @@ const btnMenu = document.getElementById('btnMenu');
 
 // Crea un event handler para mq.
 function widthChange(mediaQuery) {
-  if (mediaQuery.matches) {
-    // Si hay match, mueve secondaryNav a container2.
-    container_secondaryNav.appendChild(secondaryNav);
-  } else {
-    // Si NO hay match, mueve secondaryNav a container1, SI ES NECESARIO.
-    if (navContainer.children.length < 2) {
-        navContainer.appendChild(secondaryNav);   
-    }
-  }
+	if (mediaQuery.matches) {
+		// Si hay match, mueve secondaryNav a container2.
+		container_secondaryNav.appendChild(secondaryNav);
+		btnMenu.classList.add('none');
+	} else {
+		btnMenu.classList.remove('none');
+
+		// Si NO hay match, mueve secondaryNav a container1, SI ES NECESARIO.
+		if (navContainer.children.length < 2) {
+			navContainer.appendChild(secondaryNav);
+		}
+	}
 }
 
 // Registra el event handler.

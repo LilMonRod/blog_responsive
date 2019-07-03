@@ -1,3 +1,13 @@
+.btn_menu {
+  max-width: 34%;
+  margin-top: 10%;
+  margin-left: 57%;
+  background-color: #ffffff00;
+  border: #ffffff00 solid 1px; }
+
+.btn_menu > img {
+  width: 100%; }
+
 .sr-only {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
@@ -15,10 +25,26 @@
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 5px; }
+  @media only screen and (max-width: 620px) {
+    .site-header__language-switcher {
+      margin-top: 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      text-align: center; } }
 
 .site-header__language-switcher li {
   text-decoration: none;
   list-style: none; }
+  @media only screen and (max-width: 620px) {
+    .site-header__language-switcher li {
+      margin-top: 2.5%; } }
+
+li > a {
+  text-decoration: none;
+  color: #000; }
+
+li > a:hover {
+  text-decoration: underline; }
 
 .site-header {
   display: grid;
@@ -42,21 +68,35 @@
   display: grid;
   width: 100%;
   padding: 0;
-  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 3fr 2fr;
   grid-gap: 5px; }
+  @media only screen and (max-width: 620px) {
+    .site-header__content {
+      grid-template-rows: 75px 20px 1fr; } }
 
 .site-header__top-links {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2; }
+  @media only screen and (max-width: 620px) {
+    .site-header__top-links {
+      align-items: end;
+      justify-items: end; } }
 
 .site-header__search {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3; }
+  @media only screen and (max-width: 620px) {
+    .site-header__search {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+      .site-header__search #search {
+        width: 80%; } }
 
 .site-header__main-nav {
   grid-column-start: 1;
@@ -72,10 +112,20 @@
   grid-template-rows: 1fr;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px; }
+  @media only screen and (max-width: 620px) {
+    .main-nav {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr); } }
 
 .main-nav li {
   text-decoration: none;
   list-style: none;
   text-align: center; }
+  @media only screen and (max-width: 620px) {
+    .main-nav li {
+      margin-top: 2.5%; } }
+
+.none {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
