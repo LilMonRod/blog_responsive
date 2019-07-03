@@ -22,7 +22,7 @@
 
     function openMenu() {
         contMenu.classList.remove('none');
-    }
+}
 
     function menu() {
         if (value) {
