@@ -1,6 +1,5 @@
 (function() {
     const btnMenu = document.getElementById('btnMenu');
-    const container = document.getElementById('contHeader');
     let contMenu = document.getElementById('contMenu-js');
     let value = true;
     contMenu.classList.add('none');
@@ -22,7 +21,7 @@
 
     function openMenu() {
         contMenu.classList.remove('none');
-}
+    }
 
     function menu() {
         if (value) {
