@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Lazy Load</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/echo.min.js"></script>
+
+	<script type="text/javascript">
+		echo.init({
+			callback: function (element, op) {
+				console.log(element, 'has been', op + 'ed')
+			}
+		});
+
+	// echo.render(); is also available for non-scroll callbacks
+	</script>
+</head>
+
+<body>
+	<div class="images-gallery">
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image9.jpeg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image5.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image6.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image7.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image8.jpeg" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image14.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image21.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image2.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image19.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image18.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image17.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image16.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image15.png" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image14.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image13.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image10.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image21.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image2.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image19.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image18.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image9.jpeg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image5.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image6.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image7.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image8.jpeg" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image14.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image21.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image2.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image19.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image18.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image17.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image16.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image15.png" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image14.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image13.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image10.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image9.jpeg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image5.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image6.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image7.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image8.jpeg" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image3jpeg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image21.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image2.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image19.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image18.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image17.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image16.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image15.png" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image14.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image13.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image10.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image21.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image2.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image19.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image18.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image9.jpeg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image5.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image6.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image7.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image8.jpeg" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image9.jpeg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image21.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image2.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image19.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image18.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image17.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image16.gif" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image15.png" alt="image">
+			</div>
+		</div>
+		<div class="section">	
+			<div class="image-back">
+				<img data-echo="img/image3.jpeg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image13.jpg" alt="image">
+			</div>
+		</div>
+		<div class="section">
+			<div class="image-back">
+				<img data-echo="img/image10.jpg" alt="image">
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

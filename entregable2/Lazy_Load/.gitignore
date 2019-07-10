@@ -1,3 +1,9 @@
+#    node modules    #
+######################
+node_modules/
+dist/
+npm-debug.log*
+
 #   cache de sass    #
 ######################
 .sass-cache
@@ -13,7 +19,6 @@ style.css.map
 .Trashes
 ehthumbs.db
 Thumbs.db
-
 
 #  cache de vscode   #
 ######################
